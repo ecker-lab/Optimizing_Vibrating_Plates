@@ -15,8 +15,10 @@ This repository mainly contains the following elements:
 - Metrics to assess the manufacturability of generated plate designs in [`plate_optim/metrics`](./plate_optim/metrics).
 - A procedural beading pattern design generation method, with no direct relation to vibrations,  in [`plate_optim/pattern_generation.py`](./plate_optim/pattern_generation.py).
 
-If you would like to try out our method, we recommend getting started with this **google colab notebook**.  **TODO**
-
+If you would like to try out our method, we recommend getting started with the notebook saved in [`notebooks/run_guided_fm_design_optimization.ipynb`](notebooks/run_guided_fm_design_optimization.ipynb)
+<a target="_blank" href="https://colab.research.google.com/github/ecker-lab/Optimizing_Vibrating_Plates/blob/main/notebooks/run_guided_fm_design_optimization.ipynb">
+  <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>  
+</a> 
 
 ## Data and model checkpoints
 
@@ -37,7 +39,11 @@ Our numerical simulations are performed with [elpaso](https://akustik.gitlab-pag
 
 ## Getting started
 
-If you would like to try out our design optimization method, we recommend getting started with this **google colab notebook**.  **TODO**
+If you would like to try out our design optimization method, we recommend getting started with with the notebook saved in [`notebooks/run_guided_fm_design_optimization.ipynb`](notebooks/run_guided_fm_design_optimization.ipynb)
+<a target="_blank" href="https://colab.research.google.com/github/ecker-lab/Optimizing_Vibrating_Plates/blob/main/notebooks/run_guided_fm_design_optimization.ipynb">
+  <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>  
+</a> 
+
 
 If you would like to train models yourself, first git clone this repository and then set up the environment following the ``environment.yml`` file:
 
