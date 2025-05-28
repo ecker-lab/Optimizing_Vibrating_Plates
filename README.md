@@ -3,7 +3,6 @@
 
 Structural vibrations are a source of unwanted noise in engineering systems like cars, trains or airplanes. Minimizing these vibrations is crucial for improving passenger comfort. This work presents a novel design optimization approach based on guided flow matching for reducing vibrations by placing beadings (indentations) in plate-like structures. Our method integrates a generative flow matching model and a surrogate model trained to predict structural vibrations. During the generation process, the flow matching model pushes towards manufacturability while the surrogate model pushes to low-vibration solutions. The flow matching model and its training data implicitly define the design space, enabling a broader exploration of potential solutions as no optimization of manually-defined design parameters is required. We apply our method to a range of differentiable optimization objectives, including direct optimization of specific eigenfrequencies through careful construction of the objective function. Results demonstrate that our method generates diverse and manufacturable plate designs with reduced structural vibrations compared to designs from random search, a criterion-based design heuristic and genetic optimization.
 
-
 ## Repository structure
 
 This repository mainly contains the following elements:
@@ -38,6 +37,11 @@ Our numerical simulations are performed with [elpaso](https://akustik.gitlab-pag
 
 
 ## Getting started
+
+The video is an example of the optimization process for a beading pattern. It shows the beading pattern starting from random noise, the gradient signal from the regression model and the prediction from the flow matching model (from left to right). The red cross marks the loading position.
+
+https://github.com/user-attachments/assets/2f9ef409-817f-49ce-86cd-58cc5ccdf3ed
+
 
 If you would like to try out our design optimization method, we recommend getting started with with the notebook saved in [`notebooks/run_guided_fm_design_optimization.ipynb`](notebooks/run_guided_fm_design_optimization.ipynb)
 <a target="_blank" href="https://colab.research.google.com/github/ecker-lab/Optimizing_Vibrating_Plates/blob/main/notebooks/run_guided_fm_design_optimization.ipynb">
