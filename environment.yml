@@ -1,0 +1,32 @@
+name: acoustics
+channels:
+  - pytorch
+  - nvidia
+  - conda-forge
+dependencies:
+  - pytorch
+  - torchvision
+  - torchaudio
+  - pytorch-cuda
+  - matplotlib
+  - ipykernel
+  - timm=0.9
+  - numpy=1.26
+  - pip:
+    - munch==4.0
+    - torchinfo==1.8
+    - jupyter==1.0
+    - scipy==1.14
+    - wandb
+    - opt_einsum==3.3
+    - zarr==2.16
+    - h5py==3.12
+    - hdf5plugin==4.2
+    - seaborn==0.13
+    - imageio==2.32
+    - pytest
+    - torchinterp1d==1.1
+    - findpeaks
+    - opencv-python
+    - flow_matching
+    - git+https://github.com/JanvDelden/template.git

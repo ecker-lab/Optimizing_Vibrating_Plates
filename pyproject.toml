@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "plate_optimization"
+version = "0"
+dependencies = [
+    ]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["plate_optim"]
+
+[tool.yapf]
+based_on_style = "pep8"
+column_limit = 144  
+split_arguments_when_comma_terminated = false

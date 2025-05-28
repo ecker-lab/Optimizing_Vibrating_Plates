@@ -1,0 +1,20 @@
+data_path_ref: 'D50000/moments_d50k.pt'
+data_path_train: ['D50000/D50k_edited.h5']
+data_paths_test: ['D50000/D500_edit.h5']
+data_path_val: ['D50000/D500_edit.h5']
+
+dataset_keys: ["bead_patterns", "z_vel_abs", "z_vel_mean_sq", "phy_para", "frequencies"]
+
+# what are additional parameters of the dataset?
+conditional: False
+filter_dataset: False
+mean_conditional_param: [50, 0.5, 0.5] # Boundary condition, force_position x, force_position y
+std_conditional_param: [28.8675, 0.173205,  0.173205] 
+
+# how to subset and treat dataset
+random_split: False
+n_samples: 51000
+n_freqs: 15
+n_val_samples: 100
+max_frequency: 300
+filter_dataset: False
