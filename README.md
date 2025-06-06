@@ -13,6 +13,7 @@ This repository mainly contains the following elements:
 - Loss functions to guide towards low vibrations in [`plate_optim/utils/guidance.py`](./plate_optim/utils/guidance.py).
 - Metrics to assess the manufacturability of generated plate designs in [`plate_optim/metrics`](./plate_optim/metrics).
 - A procedural beading pattern design generation method, with no direct relation to vibrations,  in [`plate_optim/pattern_generation.py`](./plate_optim/pattern_generation.py).
+- A workflow to evaluate beading patterns via FE computation [`notebooks/simulate_plate_via_fem.ipynb`](notebooks/simulate_plate_via_fem.ipynb)
 
 If you would like to try out our method, we recommend getting started with the notebook saved in [`notebooks/run_guided_fm_design_optimization.ipynb`](notebooks/run_guided_fm_design_optimization.ipynb)
 <a target="_blank" href="https://colab.research.google.com/github/ecker-lab/Optimizing_Vibrating_Plates/blob/main/notebooks/run_guided_fm_design_optimization.ipynb">
@@ -33,7 +34,7 @@ The individual files can be downloaded via e.g. ``wget``:
 
 ### Data generation and evaluation 
 
-Our numerical simulations are performed with [elpaso](https://akustik.gitlab-pages.rz.tu-bs.de/elPaSo-Core/main/intro.html), which is a fast and flexible simulation tool developed specifically for vibroacoustics. Elpaso is not provided as part of this package. The numerical simulations can also be performed with other finite-element solvers. As an example, we will provide directions how to implement and evaluate our simulation model with Abaqus soon.
+Our numerical simulations are performed with [elpaso](https://akustik.gitlab-pages.rz.tu-bs.de/elPaSo-Core/main/intro.html), which is a fast and flexible simulation tool developed specifically for vibroacoustics. Elpaso is not provided as part of this package. The numerical simulations can also be performed with other finite-element solvers. As an example, we provide directions how to evaluate the plate model with Abaqus [`notebooks/simulate_plate_via_fem.ipynb`](notebooks/simulate_plate_via_fem.ipynb).
 
 
 ## Getting started
@@ -59,7 +60,7 @@ pip install -e .
 To specify where you want to save the data, models, etc., you can change the paths in [plate_optim/project_directories.py](plate_optim/project_directories.py)
 This repository employs wandb for logging. To be able to use it you must have an account and login: ``wandb login``
 
-**Evaluation:** This repository does not contain code for performing numerical simulations. We perform simulations with [elpaso](https://akustik.gitlab-pages.rz.tu-bs.de/elPaSo-Core/main/intro.html). We also provide directions how to implement and evaluate our simulation model with Abaqus soon.
+**Evaluation:** This repository does not contain code for performing numerical simulations. We perform simulations with [elpaso](https://akustik.gitlab-pages.rz.tu-bs.de/elPaSo-Core/main/intro.html). We provide a notebook to evaluate plates with beading patterns using the FEM software Abaqus [`notebooks/simulate_plate_via_fem.ipynb`](notebooks/simulate_plate_via_fem.ipynb).
 
 
 ## Training and optimization
