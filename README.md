@@ -3,6 +3,7 @@
 
 Structural vibrations are a source of unwanted noise in engineering systems like cars, trains or airplanes. Minimizing these vibrations is crucial for improving passenger comfort. This work presents a novel design optimization approach based on guided flow matching for reducing vibrations by placing beadings (indentations) in plate-like structures. Our method integrates a generative flow matching model and a surrogate model trained to predict structural vibrations. During the generation process, the flow matching model pushes towards manufacturability while the surrogate model pushes to low-vibration solutions. The flow matching model and its training data implicitly define the design space, enabling a broader exploration of potential solutions as no optimization of manually-defined design parameters is required. We apply our method to a range of differentiable optimization objectives, including direct optimization of specific eigenfrequencies through careful construction of the objective function. Results demonstrate that our method generates diverse and manufacturable plate designs with reduced structural vibrations compared to designs from random search, a criterion-based design heuristic and genetic optimization.
 
+Preprint available from [arxiv](https://arxiv.org/abs/2506.15263).
 ## Repository structure
 
 This repository mainly contains the following elements:
@@ -128,9 +129,25 @@ Most of our code is MIT licensed. The unguided flow matching code in this reposi
 
 ## Citation
 
-The regression model employed in this work builts upon [our previous project](https://github.com/ecker-lab/Learning_Vibrating_Plates) on predicting structural vibrations.
+```
+@article{delden2025minimizing,
+  author={van Delden, Jan and Schultz, Julius and Rothe, Sebastian and Libner, Christian and Langer, Sabine C. and L{\"u}ddecke, Timo},
+  title={Minimizing Structural Vibrations via Guided Flow Matching Design Optimization},
+  journal={arXiv preprint arXiv:2506.15263},
+  year={2025},
+}
+```
 
-Will be added.
+The regression model employed in this work builts upon [our previous project](https://github.com/ecker-lab/Learning_Vibrating_Plates) on predicting structural vibrations.
+```
+@inproceedings{delden2024vibrations,
+  title={Learning to Predict Structural Vibrations},
+  author={van Delden, Jan and Schultz, Julius and Blech, Christopher and Langer, Sabine C and L{\"u}ddecke, Timo},
+    booktitle={The Thirty-eighth Annual Conference on Neural Information Processing Systems},
+    year={2024},
+    url={https://openreview.net/forum?id=i4jZ6fCDdy}
+}
+```
 
 ## Acknowledgements
 
